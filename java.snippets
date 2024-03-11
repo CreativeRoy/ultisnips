@@ -1,0 +1,26 @@
+snippet shell "CP Shell" 
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+class $1 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer t = new StringTokenizer(br.readLine());
+		$2
+	}
+}
+endsnippet
+
+snippet psvm "main" 
+public static void main(String[] args) {
+	$1
+}
+endsnippet
+
+snippet fori "for loop index"
+for (int $1 = 0; $1 < $2; $1++) {
+	$3
+}
+endsnippet
